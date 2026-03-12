@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="Beauksy — сайт о моде и стиле. Идеи нарядов, модные тенденции, полезные статьи и стильная обувь. Найдите вдохновение для своего образа.">
+
+    <meta name="keywords"
+        content="мода, стиль, обувь, туфли, кроссовки, идеи нарядов, модные тенденции, женская мода, fashion, Beauksy">
+
+    <meta name="author" content="Beauksy">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://beauksy.com/">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Beauksy</title>
+    <link rel="icon" type="image/png" href="Картинки/beauksy.png">
+</head>
+
+<body>
+    <!-- Модальное окно -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Вход в аккаунт</h2>
+
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;"><img
+                    src="Картинки/beauksy.png"></a></div>
+        <nav id="main-nav">
+            <div class="close-menu" id="closeMenu">✕</div>
+
+            <ul class="nav-links">
+                <li><a href="ideinareadov.html">Идеи нарядов</a></li>
+                <li><a href="ustoicevaiamoda.html">Устойчивая мода</a></li>
+                <li><a href="modnietendentii.html">Модные тенденции</a></li>
+                <li><a href="polezniestatii.html">Полезные статьи</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons" id="header-icons">
+
+            <span class="header-icon">
+                <div class="burger" id="burger">
+                    ☰
+                </div>
+            </span>
+            <span class="header-icon" title="Корзина" onclick="openCart()">
+                <span id="cart-count" class="cart-count">0</span>
+
+                <!-- Cart Icon SVG -->
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                    <circle cx="8.5" cy="18" r="1.5" />
+                    <circle cx="16.5" cy="18" r="1.5" />
+                    <path d="M2 2h2l2.6 12.59a2 2 0 0 0 2 1.41h7.72a2 2 0 0 0 2-1.41L20 6H6" />
+                </svg>
+            </span>
+            <span class="header-icon" title="Аккаунт" onclick="openModal()">
+                <!-- User Icon SVG -->
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                    <circle cx="11" cy="7" r="4" />
+                    <path d="M3 19c0-3.31 3.58-6 8-6s8 2.69 8 6" />
+                </svg>
+            </span>
+        </div>
+    </header>
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-title">Устойчивая мода</div>
+            <div class="about-text">
+                <p>Устойчивая мода — это подход к производству и потреблению одежды, который учитывает экологические и
+                    социальные последствия модной индустрии. Она направлена на минимизацию вреда для природы, сокращение
+                    отходов и использование ресурсов более рационально. Устойчивая мода включает переработку тканей,
+                    повторное использование материалов, а также создание одежды, которая прослужит дольше и не выйдет из
+                    моды слишком быстро.
+                </p>
+                <p>
+                    Такой подход также учитывает условия труда работников, честную оплату и безопасность на
+                    производстве. Он
+                    способствует развитию этичных брендов и повышает осознанность потребителей о том, как их выбор
+                    влияет на
+                    окружающую среду и общество.
+                </p>
+                <p>
+                    Устойчивая мода постепенно становится важной частью современной модной индустрии, сочетая стиль и
+                    ответственность. Следуя этим принципам, люди могут выглядеть модно и при этом поддерживать
+                    экологические
+                    и социальные ценности, уменьшая негативное воздействие на планету.
+                </p>
+                </ul>
+                <img src="Картинки/нупж.jpg" alt="Устойчивая мода">
+            </div>
+        </div>
+    </section>
+    </div>
+    <section class="ideas">
+        <h2>Примеры устойчивой моды</h2>
+        <div class="ideas-container">
+            <div class="idea-card" data-gallery="Stella McCartney">
+                <img class="category-img" src="Картинки/Stella McCartney1фото.jpg" alt="Stella McCartney 1 фото">
+                <img class="category-img" src="Картинки/Stella McCartney2фото.jpg" alt="Stella McCartney 2 фото">
+                <img class="category-img" src="Картинки/Stella McCartney3фото.jpg" alt="Stella McCartney 3 фото">
+                <div class="category-title">Stella McCartney</div>
+            </div>
+
+            <div class="idea-card">
+                <img class="category-img" src="Картинки/Lucy & Yak1фото.jpg" alt="Lucy & Yak 1 фото">
+                <img class="category-img" src="Картинки/Lucy & Yak2фото.jpg" alt="Lucy & Yak 2 фото">
+                <img class="category-img" src="Картинки/Lucy & Yak3фото.jpg" alt="Lucy & Yak 3 фото">
+                <div class="category-title">Lucy & Yak</div>
+            </div>
+
+            <div class="idea-card">
+                <img class="category-img" src="Картинки/Reflo1фото.jpg" alt="Reflo 1 фото">
+                <img class="category-img" src="Картинки/Reflo2фото.jpg" alt="Reflo 2 фото">
+                <img class="category-img" src="Картинки/Reflo3фото.jpg" alt="Reflo 3 фото">
+                <div class="category-title">Reflo</div>
+            </div>
+            <div class="idea-card">
+                <img class="category-img" src="Картинки/Sam Badi1фото.jpg" alt="Sam Badi 1 фото">
+                <img class="category-img" src="Картинки/Sam Badi2фото.jpg" alt="Sam Badi 2 фото">
+                <img class="category-img" src="Картинки/Sam Badi3фото.jpg" alt="Sam Badi 2 фото">
+                <div class="category-title">Sam Badi</div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div style="font-weight:600; margin-bottom:2px; text-align: center;"> Мы в соцсетях</div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">
+                    <!-- Instagram SVG -->
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                        <rect x="3" y="3" width="16" height="16" rx="5" />
+                        <circle cx="11" cy="11" r="4" />
+                        <circle cx="16.2" cy="5.8" r="1" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <!-- Pinterest SVG -->
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                        <circle cx="11" cy="11" r="9" />
+                        <path d="M11 15v-4" />
+                        <circle cx="11" cy="9" r="1" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <!-- Facebook SVG -->
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                        <circle cx="11" cy="11" r="9" />
+                        <path d="M13 8h-1a2 2 0 0 0-2 2v2h-1v2h1v4h2v-4h1l1-2h-2v-1a1 1 0 0 1 1-1h1z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Доставка</a>
+            <span>© 2026 Beauksy</span>
+        </div>
+    </footer>
+    <div id="viewer">
+        <span id="prev" class="arrow">&#10094;</span> <!-- стрелка влево -->
+        <img id="viewer-img" src="" alt="Просмотр">
+        <span id="next" class="arrow">&#10095;</span> <!-- стрелка вправо -->
+    </div>
+    <script src="script.js"></script>
+    <!-- Боковая корзина -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <span onclick="closeCart()" class="close-cart">&times;</span>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <p>Итого: <span id="cart-total">0</span> MDL</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="Beauksy — сайт о моде и стиле. Идеи нарядов, модные тенденции, полезные статьи и стильная обувь. Найдите вдохновение для своего образа.">
+
+    <meta name="keywords"
+        content="мода, стиль, обувь, туфли, кроссовки, идеи нарядов, модные тенденции, женская мода, fashion, Beauksy">
+
+    <meta name="author" content="Beauksy">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://beauksy.com/">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Beauksy</title>
+    <link rel="icon" type="image/png" href="Картинки/beauksy.png">
+</head>
+
+<body>
+    <!-- Модальное окно -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Вход в аккаунт</h2>
+
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;"><img
+                    src="Картинки/beauksy.png"></a></div>
+        <nav id="main-nav">
+            <div class="close-menu" id="closeMenu">✕</div>
+
+            <ul class="nav-links">
+                <li><a href="ideinareadov.html">Идеи нарядов</a></li>
+                <li><a href="ustoicevaiamoda.html">Устойчивая мода</a></li>
+                <li><a href="modnietendentii.html">Модные тенденции</a></li>
+                <li><a href="polezniestatii.html">Полезные статьи</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons" id="header-icons">
+
+            <span class="header-icon">
+                <div class="burger" id="burger">
+                    ☰
+                </div>
+            </span>
+            <span class="header-icon" title="Корзина" onclick="openCart()">
+                <span id="cart-count" class="cart-count">0</span>
+
+                <!-- Cart Icon SVG -->
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                    <circle cx="8.5" cy="18" r="1.5" />
+                    <circle cx="16.5" cy="18" r="1.5" />
+                    <path d="M2 2h2l2.6 12.59a2 2 0 0 0 2 1.41h7.72a2 2 0 0 0 2-1.41L20 6H6" />
+                </svg>
+            </span>
+            <span class="header-icon" title="Аккаунт" onclick="openModal()">
+                <!-- User Icon SVG -->
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                    <circle cx="11" cy="7" r="4" />
+                    <path d="M3 19c0-3.31 3.58-6 8-6s8 2.69 8 6" />
+                </svg>
+            </span>
+        </div>
+    </header>
+
+    <h1 align="center">Спортивные образы</h1>
+    <section class="categories">
+
+        <div class="category-card">
+            <img class="category-img" id="sport" src="Картинки/спортивныйо1.jpg.png" alt="спортивный образ">
+            <img class="category-img" id="sport" src="Картинки/спортивныйо1сзади.jpg.png" alt="спортивный образ">
+            <div class="category-title">Элегантность</div>
+        </div>
+        <div class="category-card">
+            <img class="category-img" id="sport" src="Картинки/спортивныйобраз2.jpg.png" alt="спортивный образ">
+            <img class="category-img" id="sport" src="Картинки/спортивныйобраз2сзади.jpg.png" alt="спортивный образ">
+            <div class="category-title">Комфорт</div>
+        </div>
+        <div class="category-card">
+            <img class="category-img" id="sport" src="Картинки/спортивныйо3.jpg.png" alt="спортивный образ">
+            <img class="category-img" id="sport" src="Картинки/спортивныйо3сзади.jpg.png" alt="спортивный образ">
+            <div class="category-title">Спокойствие</div>
+        </div>
+    </section>
+    <footer>
+
+        <div>
+            <div style="font-weight:600; margin-bottom:2px; text-align: center;"> Мы в соцсетях</div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">
+                    <!-- Instagram SVG -->
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                        <rect x="3" y="3" width="16" height="16" rx="5" />
+                        <circle cx="11" cy="11" r="4" />
+                        <circle cx="16.2" cy="5.8" r="1" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <!-- Pinterest SVG -->
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                        <circle cx="11" cy="11" r="9" />
+                        <path d="M11 15v-4" />
+                        <circle cx="11" cy="9" r="1" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <!-- Facebook SVG -->
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 22 22">
+                        <circle cx="11" cy="11" r="9" />
+                        <path d="M13 8h-1a2 2 0 0 0-2 2v2h-1v2h1v4h2v-4h1l1-2h-2v-1a1 1 0 0 1 1-1h1z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-legal">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Доставка</a>
+            <span>© 2026 Beauksy</span>
+        </div>
+    </footer>
+    <div id="viewer">
+        <span id="prev" class="arrow">&#10094;</span> <!-- стрелка влево -->
+        <img id="viewer-img" src="" alt="Просмотр">
+        <span id="next" class="arrow">&#10095;</span> <!-- стрелка вправо -->
+    </div>
+    <script src="script.js">updateCartCount()</script>
+    <!-- Боковая корзина -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <span onclick="closeCart()" class="close-cart">&times;</span>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <p>Итого: <span id="cart-total">0</span> MDL</p>
+        </div>
+    </div>
+</body>
+
+</html>
