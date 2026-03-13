@@ -721,7 +721,7 @@ nav a {
 .idea-card {
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     aspect-ratio: 2 / 4;
     overflow: hidden;
     border-radius: 20px;
@@ -1315,4 +1315,5 @@ template p {
     .hours-item {
         padding: 16px;
     }
+
 }
